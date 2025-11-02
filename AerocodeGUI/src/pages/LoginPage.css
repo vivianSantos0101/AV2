@@ -1,0 +1,104 @@
+    /* src/pages/LoginPage.css */
+    /* (Cores da sua paleta + Lógica de alinhamento da imagem) */
+
+    .login-page-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw; 
+        /* Sua cor de fundo (Roxo Super Escuro) */
+        background-color: #1d012e; 
+    }
+
+    .login-form-container {
+        width: 600px; 
+        /* Sua cor da caixa (Roxo Escuro) */
+        background-color: #1d012e; 
+        padding: 40px; 
+        border-radius: 8px;
+        box-shadow: none;
+        box-sizing: border-box;
+    }
+
+    /* ------------------------------------------- */
+    /* CORREÇÃO CHAVE: Título com Imagem (Logo) */
+    /* ------------------------------------------- */
+    .login-form-container h2.login-logo {
+        /* (Regras da Ação 33 para alinhar a imagem) */
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 25px; /* Espaço entre a imagem e o texto */
+
+        /* (Suas cores e estilos) */
+        color: #3a8eed; 
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 40px; 
+        font-size: 5rem;
+    }
+
+    /* (Nova regra da Ação 33 para a imagem) */
+    .login-logo-image {
+        height: 170px; /* Ajuste o tamanho do seu logo aqui */
+        width: auto;
+    }
+    /* ------------------------------------------- */
+
+    .login-form-group {
+        display: flex; 
+        align-items: center; 
+        gap: 15px; 
+        
+        /* (Sua regra de centralização) */
+        width: 80%; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px; 
+    }
+
+    .login-form-group label {
+        width: 100px; 
+        margin-bottom: 0; 
+        font-weight: 500;
+        color: #e0e7ff; 
+        text-align: left; 
+    }
+
+    .login-form-group input {
+        flex-grow: 1; 
+        padding: 12px;
+        box-sizing: border-box;
+        border: 1px solid #7754de; /* Sua cor de borda */
+        background-color: #ffffff; 
+        color: #1f2937; 
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+
+    .login-submit-button {
+        display: block;
+        margin: 40px auto 0 auto; 
+        width: 200px; 
+        padding: 12px;
+        /* Sua cor de botão */
+        background-color: #3a8eed; 
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .login-submit-button:hover {
+        background-color: #6d28d9; /* Seu hover */
+    }
+
+    .login-error-message {
+        color: #fca5a5; 
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }

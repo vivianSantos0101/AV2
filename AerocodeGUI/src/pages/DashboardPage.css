@@ -1,0 +1,52 @@
+/* src/pages/DashboardPage.css */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #475569; 
+    width: 100%; /* GARANTIA: O cabeçalho usa 100% da largura do .content-area-full */
+    box-sizing: border-box; 
+}
+
+.page-header h2 {
+    margin: 0;
+    font-size: 2.25rem;
+    color: #f1f5f9; 
+}
+
+/* NOVO LAYOUT: Lista Vertical de 100% para os Cards de Projeto */
+.projects-grid {
+    display: grid;
+    /* CORREÇÃO CHAVE: GRID FLEXÍVEL (4 colunas) */
+    /* Tenta encaixar o máximo de cards que puder (auto-fit),
+       com uma largura mínima de 250px e máxima de 1 fração (1fr).
+       Isto é mais responsivo do que forçar 'repeat(4, 1fr)'. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; /* Um gap um pouco menor para caberem 4 */
+    width: 100%; /* Garantido que usa toda a largura do content-area */
+    
+    /* REMOVER O MAX-WIDTH E MARGIN AUTO SE ESTIVEREM AQUI, 
+       pois queremos que use toda a largura disponível */
+}
+
+.no-projects-message {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1rem;
+    color: #94a3b8; 
+    background-color: #1e293b; 
+    border-radius: 8px;
+    box-shadow: none;
+    width: 100%; /* GARANTIA: A caixa de mensagem usa 100% */
+    box-sizing: border-box;
+}
+
+.page-header .btn-primary {
+    /* Garante que o botão tenha apenas o tamanho do conteúdo */
+    width: auto; 
+    /* Adiciona margem para separá-lo do título, se necessário */
+    margin-left: 15px; 
+}

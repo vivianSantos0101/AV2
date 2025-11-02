@@ -1,0 +1,19 @@
+/* src/components/layout/MainLayout.css */
+/* Estilos para layout de Menu Lateral (Sidebar) - Dark Mode */
+
+.main-layout-container {
+    /* CORREÇÃO CRÍTICA: Flex Horizontal (Sidebar + Conteúdo) */
+    display: flex;
+    flex-direction: row; 
+    height: 100vh;
+    width: 100%; /* Garante que o container principal use toda a largura */
+    background-color: #1d012e; /* Fundo Dark Mode */
+}
+
+.content-area-full {
+    flex-grow: 1; /* Ocupa todo o espaço horizontal restante */
+    overflow-y: auto; 
+    padding: 24px;
+    box-sizing: border-box;
+    color: #e2e8f0; /* Texto claro */
+}

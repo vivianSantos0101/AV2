@@ -1,0 +1,13 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  /* CORREÇÃO CRÍTICA: Forçar 100% da altura e largura da viewport */
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Dark Mode Global */
+  background-color: #000d00; 
+}

@@ -1,0 +1,101 @@
+/* src/components/forms/FormStyles.css */
+
+.form-container {
+    background-color: #1e293b;
+    padding: 24px;
+    padding-top: 32px;
+    width: 450px; 
+    box-sizing: border-box;
+    
+    /* CORREÇÃO CHAVE: Centraliza o formulário horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
+    /* OU: */
+    /* margin: 0 auto; */
+}
+
+.form-container h2 {
+    /* 2. Título do formulário será claro */
+    color: #f1f5f9; 
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.form-group label {
+    /* 3. Rótulos (labels) serão claros */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #cbd5e1; /* Cinza claro */
+}
+
+.form-group input,
+.form-group select {
+    /* 4. Campos de Input/Select (fundo e texto) */
+    background-color: #334155; /* Fundo do input mais claro que o modal */
+    color: #f1f5f9; /* Texto claro no input */
+    border: 1px solid #475569; /* Borda leve */
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    /* 5. Foco em roxo (destaque claro) */
+    outline: 2px solid #a78bfa; /* Roxo mais claro para contraste */
+    border-color: #a78bfa;
+}
+
+.form-actions {
+    /* 6. Linha divisória clara */
+    border-top: 1px solid #334155; 
+    padding-top: 20px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+/* ... (Manter os botões .btn-primary e .btn-secondary com as cores originais de destaque) ... */
+
+.form-error-message {
+    color: #fca5a5; /* NOVO: Vermelho claro para o Dark Mode */
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #4f46e5; /* Roxo principal para destaque (Primary Action) */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: auto; /* IMPORTANTE: Garante que não se estique demais */
+}
+.btn-primary:hover {
+    background-color: #4338ca;
+}
+
+/* --- Botões de Ação Secundária (Cancelar, Voltar) --- */
+.btn-secondary {
+    background-color: #64748b; /* Cinza escuro para ações secundárias */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: auto;
+}
+.btn-secondary:hover {
+    background-color: #475569;
+}

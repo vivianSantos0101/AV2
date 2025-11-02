@@ -1,0 +1,100 @@
+/* src/components/layout/Sidebar.css */
+/* (Suas cores + Layout de Logo Vertical) */
+
+.sidebar-container {
+    width: 250px; 
+    height: 100vh; 
+    /* Sua Cor: Roxo escuro */
+    background-color: #1d012e; 
+    color: #e0e7ff; /* COR: Texto Claro */
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    box-sizing: border-box; 
+    /* Sua Cor: Borda roxa */
+    border-right: 1px solid #7754de;
+}
+
+/* ------------------------------------------- */
+/* CORREÇÃO CHAVE: Logo Vertical (Imagem + Texto) */
+/* ------------------------------------------- */
+.sidebar-logo {
+    display: flex; 
+    /* Mudar a direção para coluna (um em cima do outro) */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; /* Espaço entre a imagem (em cima) e o texto (em baixo) */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    /* Sua Cor: Borda roxa */
+    border-bottom: 1px solid #7754de;
+}
+
+.sidebar-logo h2 {
+    margin: 0; 
+    /* Sua Cor: Azul Vibrante */
+    color: #3a8eed; 
+    font-size: 3rem; /* Seu Tamanho */
+}
+
+.sidebar-logo-image {
+    height: 120px; /* Seu Tamanho */
+    width: auto;
+}
+/* ------------------------------------------- */
+
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    flex-grow: 1; 
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: #e0e7ff; 
+    font-size: 1.0rem;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-nav a:hover {
+    /* Sua Cor: Hover Roxo */
+    background-color: #6d28d9; 
+    color: #ffffff; 
+}
+
+.sidebar-nav a.active {
+    /* Sua Cor: Ativo Azul Vibrante */
+    background-color: #3a8eed; 
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+.sidebar-user {
+    /* Sua Cor: Borda roxa */
+    border-top: 1px solid #7754de;
+    padding-top: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+.logout-button {
+    /* Sua Cor: Botão Sair Azul */
+    background-color: #3a8eed; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.logout-button:hover {
+    /* Sua Cor: Hover Roxo */
+    background-color: #7754de;
+}
